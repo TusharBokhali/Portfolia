@@ -57,13 +57,11 @@ export default function Home() {
         return false;
       });
 
-      // Disable keyboard shortcuts for copying
+      // Disable keyboard shortcuts for copying (keeping some restrictions for content protection)
       document.addEventListener('keydown', (e) => {
-        // Prevent Ctrl+C, Ctrl+X, Ctrl+A, Ctrl+Z, Ctrl+Y, F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        // Prevent Ctrl+C, Ctrl+X, Ctrl+A, Ctrl+Z, Ctrl+Y (content protection only)
         if (
-          (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'a' || e.key === 'z' || e.key === 'y' || e.key === 'u')) ||
-          e.key === 'F12' ||
-          (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J'))
+          (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'a' || e.key === 'z' || e.key === 'y'))
         ) {
           e.preventDefault();
           return false;
@@ -100,37 +98,8 @@ export default function Home() {
         return false;
       });
 
-      // Disable developer tools
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-          e.preventDefault();
-          return false;
-        }
-      });
-
-      // Disable view source
-      document.addEventListener('keydown', (e) => {
-        if (e.ctrlKey && e.key === 'u') {
-          e.preventDefault();
-          return false;
-        }
-      });
-
-      // Disable print screen
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'PrintScreen') {
-          e.preventDefault();
-          return false;
-        }
-      });
-
-      // Disable save page
-      document.addEventListener('keydown', (e) => {
-        if (e.ctrlKey && e.key === 's') {
-          e.preventDefault();
-          return false;
-        }
-      });
+      // Developer tools are now enabled
+      // Removed restrictions for F12, Ctrl+Shift+I, Ctrl+U, PrintScreen, Ctrl+S
     };
 
     // Enable privacy mode

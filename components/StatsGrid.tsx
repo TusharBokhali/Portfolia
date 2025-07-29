@@ -5,9 +5,9 @@ import { GlassCard } from './GlassCard';
 
 export function StatsGrid() {
   const stats = [
-    { label: 'Apps Built', value: '50+', color: 'from-cyan-400 to-blue-500' },
-    { label: 'Years Experience', value: '5+', color: 'from-purple-400 to-pink-500' },
-    { label: 'GitHub Commits', value: '2.5k+', color: 'from-green-400 to-emerald-500' },
+    { label: 'Apps Built', value: '20+', color: 'from-cyan-400 to-blue-500' },
+    { label: 'Years Experience', value: '2+', color: 'from-purple-400 to-pink-500' },
+    { label: 'GitHub Commits', value: '1.6k+', color: 'from-green-400 to-emerald-500' },
     { label: 'App Store Rating', value: '4.9★', color: 'from-yellow-400 to-orange-500' },
   ];
 

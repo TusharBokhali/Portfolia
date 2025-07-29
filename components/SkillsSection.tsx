@@ -21,7 +21,7 @@ export function SkillsSection() {
         { name: 'React Native', level: 95 },
         { name: 'TypeScript', level: 90 },
         { name: 'JavaScript', level: 95 },
-        { name: 'Swift/Kotlin', level: 75 },
+        { name: 'Swift/Kotlin', level: 60 },
       ]
     },
     {
@@ -29,7 +29,7 @@ export function SkillsSection() {
       skills: [
         { name: 'Firebase', level: 85 },
         { name: 'Node.js', level: 80 },
-        { name: 'GraphQL', level: 75 },
+        { name: 'GraphQL', level: 60 },
         { name: 'REST APIs', level: 90 },
       ]
     },
@@ -37,8 +37,8 @@ export function SkillsSection() {
       title: 'Animation & UI',
       skills: [
         { name: 'Reanimated', level: 90 },
-        { name: 'Lottie', level: 85 },
-        { name: 'Gesture Handler', level: 88 },
+        { name: 'Lottie', level: 95 },
+        { name: 'Gesture Handler', level: 90 },
         { name: 'Custom Animations', level: 92 },
       ]
     }

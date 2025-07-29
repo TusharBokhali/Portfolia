@@ -161,12 +161,12 @@ export function HeroSection() {
           className="group flex flex-col items-center text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer hoverable"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
             className="flex flex-col items-center"
-          >
+        >
             <span className="text-sm mb-2 font-medium group-hover:text-cyan-400 transition-colors">
               Scroll to explore
             </span>
@@ -196,7 +196,7 @@ export function HeroSection() {
             transition={{ delay: 2.5, duration: 0.5 }}
           >
             Press to scroll down
-          </motion.div>
+        </motion.div>
         </motion.button>
       </motion.div>
     </section>
